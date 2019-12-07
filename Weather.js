@@ -8,7 +8,7 @@ const weatherOptions = {
     Thunderstrom: {
         iconName: "weather-lightning",
         gradient: ["#373B44", "#4286f4"],
-        title: "Thunderstorm in the house",
+        title: "Thunderstorm",
         subtitle: "Stay in your place"
     },
     Drizzle: {
@@ -20,7 +20,7 @@ const weatherOptions = {
     Rain: {
         iconName: "weather-pouring",
         gradient: ["#4da0b0", "#d39d38"],
-        title: "Raining like a MF",
+        title: "Raining",
         subtitle: "For more info look outside"
     },
     Snow: {
@@ -32,8 +32,8 @@ const weatherOptions = {
     Clear: {
         iconName: "weather-sunny",
         gradient: ["#4da0b0", "#d39d38"],
-        title: "Sunny as fuck",
-        subtitle: "Go get your ass burnt"
+        title: "Sunny",
+        subtitle: "Go get your burnt"
     },
     Clouds: {
         iconName: "weather-cloudy",
@@ -157,17 +157,21 @@ const styles = StyleSheet.create({
     },
     title: {
         color: "white",
-        fontSize: 40,
-        fontWeight: "200",
-        marginBottom: 10
+        fontSize: 44,
+        fontWeight: "300",
+        marginBottom: 10,
+        textAlign: "left"
     },
     subtitle: {
-        fontWeight: "400",
+        fontWeight: "600",
         color: "white",
-        fontSize: 23
+        fontSize: 24,
+        textAlign: "left"
     },
     textContainer: {
-        paddingHorizontal: 20,
-        alignItems: "flex-start"
+        alignItems: "flex-start",
+        paddingHorizontal: 40,
+        justifyContent: "center",
+        flex: 1
     }
 });
